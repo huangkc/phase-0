@@ -1,6 +1,11 @@
 
+Index.html wireframe:
 ![index.html wireframe](./imgs/index-wireframe.png)
+
+
+blog/index.html wireframe:
 ![blog/index.html wireframe](./imgs/blog-index-wireframe.png)
+
 
 What is a wireframe?
 A wireframe is a depiction of the information hierarchy for the design of a website, similar to an architectural blueprint. The wireframe can be used to plan the layout of the website.
