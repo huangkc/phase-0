@@ -1,0 +1,90 @@
+
+body {
+	color: #000080;
+ 	background-color: #ffffff;    
+}
+
+a:link {
+    color: #800080;
+}
+
+a:visited {
+    color: #ff0000;
+}
+
+div.list_item {
+
+	-moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0px;
+    column-count: 2;
+    column-gap: 0px;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+   }
+
+span.first-letter {
+    font-size: 1.5em
+}
+.smaller {
+    font-size: .75em;
+}
+
+.geico {
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.divider {
+	width: 100%; 
+	height: 1px; 
+	background-color: gray;
+}
+
+span.address {
+	text-align: center;
+	display: block;
+		}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/*What is important to know when linking an external file (like a stylesheet) to
+an HTML file?  The link goes in the <head> section of the HTML file and has a
+"rel" attribute, a "type" attribute, and a "href" attribute. This allows you to
+link the same stylesheet to multiple HTML files (or multiple stylesheets to one
+HTML file) so you do not have to reproduce the stylesheet each time.
+
+What tricks did you use to help you with positioning?  For the main section  we
+decided to use the multicolumn layout. Other sections of the text were divided
+using  class or span so they can be positioned individually. To make the line-
+break we displayed the lines in "block."
+
+How hard was it to get the site as you wanted it?    The most difficult part was
+figuring out how to divide the text in two columns. Line breaks were also
+difficult to do in CSS. It was slightly tedious using trial and error to
+reproduce the sizes and styles of fonts and text.
+
+What CSS did you use to modify the element style (like size, color, etc.)  I
+used font-size, font-weight, color, text-align, etc.  I used pseudo-selectors to
+format the colors for links.
+
+Did you modify the HTML to include classes or ids? If so, which did you chose
+and why? If you didn't, how would you know which one to add to your HTML?  I did
+not use IDs because each ID can only be associated with one element and using
+IDs could complicate the code very quickly. I applied class names to multiple
+elements and then styled all of the elements under the same class name at once
+in the stylesheet.
+
+When you compared your site to the actual code base, which do you think had
+cleaner code that followed best practices and why?     The original code  used
+inline styling and the table layout was used to position the text.  Separating
+HTML and CSS would have made the code much easier to read and edit as CSS allows
+you to format multiple properties with a single selector. Using the multi-column
+layout makes the HTML cleaner and less labor-intensive to write.
