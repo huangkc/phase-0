@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link type="text/css" rel="stylesheet" href="../../week-3/stylesheets/my-berkshire-stylesheet.css">
+	
 	<title>My Berkshire Site</title>	
+	
 </head>
 <body>
+<header>
 
-BERKSHIRE HATHAWAY INC. 3555 Farnam Street Suite 1440 Omaha, NE 68131 Official Home Page
-	
-	<ul>
-		<li><a href="#">A Message From Warren E. Buffett </a></li>
-		<li><a href="#">News Releases</a> Updated July 1, 2014</li>
-		<li><a href="#">Annual & Interim Reports </a> Updated May 2, 2014</li>
-		<li><a href="#">Warren Buffett's Letters to Berkshire Shareholders </a> Updated March 1, 2014</li>
-		<li><a href="#">Link to SEC Filings</a></li>
-		<li><a href="#">Charlie Munger's Letters to Wesco Shareholders</a> Updated March 1, 2014</li>
-		<li><a href="#">Corporate Governance</a></li>
-		<li><a href="#">Annual Meeting Information</a></li>
-		<li><a href="#">Links to Berkshire Subsidiary Companies</a></li>
-		<li><a href="#">Comparative Rights and Relative Prices of Class A and B Stock</a> Updated January 20, 2010</li>
-		<li><a href="#">Owner's Manual</a> To view the Owner's Manual you may use Adobe Reader software. Click <a href="#">here</a> to download. Updated March 1, 2014</li>
-		<li><a href="#">Order Berkshire Activewear On-line</a></li>
-		<li><a href="#">Letters from Warren E. Buffet Regarding Pledges to Make Gifts of Berkshire Stock</a> Updated Augist 30, 2012</li>
-	</ul>
+	 <span class="address"><span class="first-letter">B</span>ERKSHIRE <span class="first-letter">H</span>ATHAWAY INC.</span>
+     <span class="address"> <span class="smaller">3555 Farnam Street</span></span>  
+     <span class="address"> <span class="smaller">Omaha, NE 68131</span> </span>
+     <span class="address">Official Home Page</span>
 
-<p><a href="#"><img src="..\imgs\geicoimg.gif"></a> FOR A FREE CAR INSURANCE RATE QUOTE THAT COULD SAVE YOU SUBSTANTIAL MONEY <a href="#"> WWW.GEICO.COM </a> OR CALL 1-888-395-6349, 24 HOURS A DAY</p>
+</header>
 
+<p class="divider"></p>
+
+	<main>
+		<div class="list_item">
+			<ul>
+			<li><a href="#">A Message From Warren E. Buffett </a></li><p></p>
+			<li><a href="#">News Releases</a> <span class="smaller">Updated July 1, 2014</span></li><p></p>
+			<li><a href="#">Annual & Interim Reports </a> <span class="smaller">Updated May 2, 2014</span></li>
+			<li><a href="#">Warren Buffett's Letters to Berkshire Shareholders </a> <span class="smaller"> Updated March 1, 2014</span></li><p></p>
+			<li><a href="#">Link to SEC Filings</a></li><p></p>
+			<li><a href="#">Charlie Munger's Letters to Wesco Shareholders</a> <span class="smaller">Updated March 1, 2014</span></li><p></p>
+			<li><a href="#">Corporate Governance</a></li><p></p>
+			<li><a href="#">Annual Meeting Information</a></li><p></p>
+			<li><a href="#">Links to Berkshire Subsidiary Companies</a></li><p></p>
+			<li><a href="#">Comparative Rights and Relative Prices of Class A and B Stock</a> <span class="smaller">Updated January 20, 2010</span></li><p></p>
+			<li><a href="#">Owner's Manual</a> <span class="smaller"> To view the Owner's Manual you may use Adobe Reader software. Click <a href="#">here</a> to download. Updated March 1, 2014</span></li><p></p>
+			<li><a href="#">Order Berkshire Activewear On-line</a></li><p></p>
+			<li><a href="#">Letters from Warren E. Buffet Regarding Pledges to Make Gifts of Berkshire Stock</a> <span class="smaller">Updated August 30, 2012</span></li><p></p>
+			</ul>
+		</div>
+	</main>
+
+<p class="divider"></p>
+
+<section class="geico">
+
+   	<span class="address"><a href="#"><img src="../imgs/geicoimg.gif"></a></span> 
+     <span class="address">FOR A FREE CAR INSURANCE RATE QUOTE THAT COULD SAVE YOU SUBSTANTIAL MONEY</span> 
+     <span class="address"><a href="#"> WWW.GEICO.COM </a> OR CALL 1-888-395-6349, 24 HOURS A DAY</span>
+</section>
+
+<p class="divider"></p>
+
+<section class="smaller">
 <p>If you have any comments about our WEB page, you can either write us at the address shown above or email us at <a href="#">berkshire@berkshirehathaway.com</a>. However, due to the limited number of personnel in our corporate office, we are unable to provide a direct response.</p>
+</section>
 
+<p class="divider"></p>
+
+<section>
 <p><a href="#">Legal Disclaimer</a></p>
-<p>Copyright 1978-2014 Berkshire Hathaway Inc.</p>
+<p class="smaller">Copyright 1978-2014<span class="bold"> Berkshire Hathaway Inc.</span></p>
+</section>
 
 
-<!-- 
-- What was it like to translate your previous learning with HTML into an actual site?
-It was more difficult remembering how to do things when starting from scratch. I had to review and check reference materials but was able to apply the techniques I learned and see how they work on an actual site. In cases where the outcome was not what I expected, I had to track down the causes and fix the problem. 
-
-- How was it researching and using semantic HTML5 elements? 
-Semantic HTML 5 elements were new to me so I started researching with Sections and Outlines on Mozilla Developer Network. The elements are different from what I learned with HTML 4 so I tried to get a better understanding of the basic HTML 5 sectioning elements and applied them in this challenge. 
-
-- How did you do at keeping to best practices (i.e. no formatting in the HTML) What I try to do is think of HTML primarily as a tool for marking up text and organizing the site's content which is a separate process from styling. There were times when I was tempted to do inline styling and had to remind myself not to do it. I was able to use the semantic validation tool to check my html syntax and make some corrections.
-
-- What seems good and bad about HTML? HTML concepts are relative intuitive as far as understanding and learning. It is also great for rendering documents and text material. However, it is not a programming language, so capabilities such as styling and interactivity are lacking in HTML. 
-
-- What tricks do you have for remembering how to write HTML? 
-I try to remember to always close my tags. Also, HTML documents have components similar to any other document we might create - heading, body, footer, sections, etc. Keeping this in mind helps structure the page and organize a piece of content on the page.
-
--->
 </body>
 </html>
 
