@@ -8,14 +8,24 @@ An integer is a number without decimals. A float is a number with decimal points
 What is the difference between float and integer division? How would you explain the difference to someone who doesn't know anything about programming? Integer division returns the integer part of the answer. If the answer has decimals (a remainder), they will not be returned. Float division returns remainder, if any.
 
 Release 2
-**Hours in a year**
+
+*Hours in a year*
 ```ruby
 puts 365*24
 ```
-**Minutes in a decade**
+
+*Minutes in a decade*
 ```ruby 
 puts 365*24*600
 ```
+Release 5
+
+[Defining Variables](https://github.com/huangkc/phase-0/blob/master/week-4/defining-variables.rb)
+[Simple String Methods](https://github.com/huangkc/phase-0/blob/master/week-4/simple-string.rb)
+[Local Variables and Basic Arithmetical Operations](https://github.com/huangkc/phase-0/blob/master/week-4/basic-math.rb)
+
+Release 7
+
 How does Ruby handle addition, subtraction, multiplication, and division of numbers?
 Use "+" for addition, "-" for subtraction, "*" for multiplication, and "/" for division.
 
