@@ -33,12 +33,13 @@ variable_name = value
 
 How do you define a method?
 def method_name (arguments)
-		code block
+	code block
 end
 
 What is the difference between a local variable and a method? 
 A local variable is accessible within a limited scope in a program.  
 A method is a reusable block of code written to perform a specific task. 
+A method may include code blocks. A local variable does not.
 
 How do you run a ruby program from the command line?
 ruby <filename>.rb
