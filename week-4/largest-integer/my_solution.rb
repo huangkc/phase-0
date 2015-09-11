@@ -13,4 +13,5 @@
 # Your Solution Below
 def largest_integer(list_of_nums)
   # Your code goes here!
+  list_of_nums.max
 end
