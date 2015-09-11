@@ -1,6 +1,6 @@
 # Define a Hash
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself].
 
 
 # Your Solution Below
@@ -12,9 +12,6 @@ my_info = {
   :hometown => "San Francicso",
   :age => 30
 }
-
-
-
 
 
 # RSpec Tests. They are included in this file because the local variables you are creating are not accessible across files. If we try to run these files as a separate file per normal operation, the local variable checks will return nil.
