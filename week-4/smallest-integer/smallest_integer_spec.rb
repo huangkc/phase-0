@@ -1,3 +1,4 @@
+
 require_relative "my_solution"
 
 describe 'smallest_integer' do
