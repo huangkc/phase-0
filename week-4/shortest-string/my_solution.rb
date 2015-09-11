@@ -11,8 +11,25 @@
 # If +list_of_words+ is empty the method should return nil
 
 #Your Solution Below
-def shortest_string(list_of_words)
-  # Your code goes here!
-  list_of_words.min_by{|word| word.length}
-  
-end
+
+# This was my initial solution but I could not get the test to pass
+
+# def shortest_string(list_of_words)
+# 	if list_of_words.empty? return nil
+# 	else 
+#    	ar=[]
+#    	list_of_words.each {|word| ar.push word.length}
+#   	list_of_words.each do |word|
+#    	 	if word.length == ar.min
+#    		 	word
+# 	    	end
+#   	end
+#  	end
+# end
+
+# shortest_string(['cat','zzzzz','poll'])
+
+# def shortest_string(list_of_words)
+#   # Your code goes here!
+#   list_of_words.min_by{|word| word.length}
+# end

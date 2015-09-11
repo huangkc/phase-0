@@ -10,9 +10,23 @@
 #
 # If +list_of_words+ is empty the method should return nil
 
+# This was my initial solution but I could not get the test to pass
 
-# Your Solution Below
-def longest_string(list_of_words)
-  # Your code goes here!
-  list_of_words.max_by{|word| word.length}
-end
+# def longest_string(list_of_words)
+# 	if list_of_words.empty? return nil
+# 	else 
+#    	ar=[]
+#    	list_of_words.each {|word| ar.push word.length}
+#    	list_of_words.each do |word|
+#    	 	if word.length == ar.max
+#	    	 	word
+# 		   	end
+# 		end
+#    end
+# end
+
+
+# def longest_string(list_of_words)
+#   # Your code goes here!
+#   list_of_words.max_by{|word| word.length}
+# end
