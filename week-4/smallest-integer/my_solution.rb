@@ -11,8 +11,17 @@
 # If +list_of_nums+ is empty the method should return nil
 
 # Your Solution Below
-def smallest_integer(list_of_nums)
-  # Your code goes here!
-  list_of_nums.min
 
-end
+# def smallest_integer(list_of_nums)
+# 	list_of_nums.map{|x,y| x<=>y}
+# 	list_of_nums.first
+# end
+
+# def smallest_integer(list_of_nums)
+#    list_of_nums.sort!
+#    list_of_nums.first
+# end
+
+# def smallest_integer(list_of_nums)
+#   list_of_nums.min
+# end
