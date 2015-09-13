@@ -12,19 +12,12 @@
 
 # Your Solution Below
 
+# My initial solution was to iterate through the list and use <=> to compare each
+# item to the next but I could not get the test to pass.
+
 # def largest_integer(list_of_nums)
-# 	list_of_nums.map{|x, y| x<=>y}
+# 	list_of_nums.sort!
 # 	list_of_nums.last
-# end
-
-
-# def largest_integer(list_of_nums)
-#    list_of_nums.sort!
-#    list_of_nums.last
-# end
-
-# def largest_integer(list_of_nums)
-#  list_of_nums.max
 # end
 
 

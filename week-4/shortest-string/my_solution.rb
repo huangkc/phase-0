@@ -27,9 +27,8 @@
 #  	end
 # end
 
-# shortest_string(['cat','zzzzz','poll'])
+
 
 # def shortest_string(list_of_words)
-#   # Your code goes here!
 #   list_of_words.min_by{|word| word.length}
 # end

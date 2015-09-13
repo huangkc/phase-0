@@ -12,16 +12,10 @@
 
 # Your Solution Below
 
-# def smallest_integer(list_of_nums)
-# 	list_of_nums.map{|x,y| x<=>y}
-# 	list_of_nums.first
-# end
+# My initial solution was to iterate through the list and use <=> to compare each
+# item to the next but I could not get the test to pass.
 
 # def smallest_integer(list_of_nums)
-#    list_of_nums.sort!
-#    list_of_nums.first
+# 	list_of_nums.sort!
 # end
 
-# def smallest_integer(list_of_nums)
-#   list_of_nums.min
-# end
