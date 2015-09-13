@@ -29,10 +29,11 @@ Defining Math Methods
 https://github.com/huangkc/phase-0/blob/master/week-4/math/my_solution.rb)
 
 How do you define a local variable?
+Local variables start with a lower case leter or underscore and consists of letters, underscores, and/or digits.
 variable_name = value
 
 How do you define a method?
-def method_name (arguments)
+def method_name (argument)
 	code block
 end
 
