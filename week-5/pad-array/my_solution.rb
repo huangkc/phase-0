@@ -59,16 +59,20 @@ def pad(array, min_size, value = nil) #non-destructive
 end
 # 4. Reflection
 
-# Which data structure did you and your pair decide to implement and why?
- # We used arrays. We thought that made sense because input and output are both arrays.
+# -Were you successful in breaking the problem down into small steps?
+# We were successful in breaking the problem down into small steps.
 
-# Were you more successful breaking this problem down into implementable pseudocode than the last with a pair? I had a much easier time this time. I have a better understanding to how to write pseudocode as a result of having more practice.
-
-# What issues/successes did you run into when translating your pseudocode to code?
+# -Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have? 
 # We were able to translate conditionals and output statements but had a more difficult time with padding the array. Another difficulty was to translate into code the non-destructive method.
 
-# What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
-# We tried to use “while” and similar loops but adopted an enumerable method to add values to the array. They were not difficult to implement but it took some time to understand the method and the syntax from practice and reading documentation. 
+# Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them? 
+# The destructive method passed the tests. The non-destructive method did not pass all of the tests mainly because it altered the original array. We had to figure out how to make the method return a new object.
 
+# When you refactored, did you find any existing methods in Ruby to clean up your code? We did find existing methods for doing what we wanted to do and were able to reduce the length of method.
+
+# How readable is your solution? Did you and your pair choose descriptive variable names?
+# Our solution was readable. We selected descriptive variable names.
+
+# What is the difference between destructive and non-destructive methods in your own words? Destructive method alters the original data structure while non-destructive methods return a new data structure but do not alter the original. 
 
 
