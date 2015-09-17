@@ -26,7 +26,7 @@
 # Return array of keys with highest frequency 
 
 
-# 1. Initial Solution
+# # 1. Initial Solution
 def mode(array)
   mode_hash=Hash.new {|key, value| value = 1}
   largest_mode=0
@@ -45,6 +45,7 @@ def mode(array)
 end
 
 # 3. Refactored Solution
+#Solution 1
 def mode(array)
   mode_hash=Hash.new {|key, value| value = 1}
   largest_mode=0
@@ -54,6 +55,20 @@ def mode(array)
       largest_mode = mode_hash[item]
     end
 	end
+  mode_hash.keep_if {|key,value| value == largest_mode }
+  mode_hash.keys
+end
+
+#Solution 2
+def mode(array)
+  mode_hash=Hash.new(0)
+  largest_mode=0
+  array.each do|item| 
+    mode_hash[item] +=1
+    if mode_hash[item] > largest_mode
+      largest_mode = mode_hash[item]
+    end
+  end
   mode_hash.keep_if {|key,value| value == largest_mode }
   mode_hash.keys
 end
