@@ -21,13 +21,13 @@ def get_grade(array_1)
 	
 	avg=array_1.reduce(:+)/array_1.length
 	
-	if avg.to_i <= 100 && avg.to_i >= 90 
+	if avg <= 100 && avg >= 90 
 		return 'A'
-	elsif avg.to_i <= 89 && avg.to_i >= 80 
+	elsif avg <= 89 && avg >= 80 
 		return 'B'
-	elsif avg.to_i <= 79 && avg.to_i >= 70
+	elsif avg <= 79 && avg >= 70
 			return 'C'
-	elsif avg.to_i <= 69 && avg.to_i >= 60 
+	elsif avg <= 69 && avg >= 60 
 		return 'D'
 	else return 'F'
 	end
@@ -36,21 +36,42 @@ end
 
 # 3. Refactored Solution
 
-
+# Solution 1
 def get_grade(array_1)	
 	avg=array_1.reduce(:+)/array_1.length
-	if avg.to_i <= 100 && avg.to_i >= 90 
+	if avg <= 100 && avg >= 90 
 		'A'
-	elsif avg.to_i <= 89 && avg.to_i >= 80 
+	elsif avg <= 89 && avg >= 80 
 		'B'
-	elsif avg.to_i <= 79 && avg.to_i >= 70 
+	elsif avg <= 79 && avg >= 70 
 		'C'
-	elsif avg.to_i <= 69 && avg.to_i >= 60 
+	elsif avg <= 69 && avg >= 60 
 		'D'
 	else 'F'
 	end
 end
 
+#solution 2 using hash
+def get_grade(array_1)	
 
+grade = {
+	90..100 => "A",
+    80..89 => "B",
+    70..79 => "C",
+    60..69 => "D",
+	0..69 => "F"
+	}
+
+avg=array_1.reduce(:+)/array_1.length
+
+grade.each do |k,v|
+	if k.include? avg
+		return v
+	end
+	end
+end
 # 4. Reflection
-
+# I  used the same code from the calculate grade exercise from last week and 
+# just reversed the logic. I thought about using 'case' also, but Using a hash
+# would actually be simpler. Plus the hash approach would allow you to put in + and - for each 
+# letter grade.
