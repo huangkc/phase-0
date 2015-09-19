@@ -13,7 +13,7 @@
 
 # def array_concat(array_1, array_2)		
 #   a = array_1+array_2
-#   a.flatten
+  
 # end
 
 
