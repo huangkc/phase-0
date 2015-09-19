@@ -21,22 +21,24 @@ end
 
 # Person 2
 def my_array_modification_method!(source, thing_to_modify)
-  source.collect! do |x|
-      if x.is_a? Integer
-        x+=thing_to_modify
-        else x
-      end  
+  source.collect! do |x| 
+    if x.is_a?(Integer) 
+      x+=thing_to_modify
+    else x
+    end
   end
 end
-
 def my_hash_modification_method!(source, thing_to_modify)
   source.each{|key,value| source[key] = value+thing_to_modify}
 end
 
 # Identify and describe the Ruby method(s) you implemented.
-# I used #collect! to iterate through the array to alter its contents
-# I used #is_a? to check if each element in the array is an integer
-# I used #each to iterate through the hash to modify the values
+# I used #collect! to iterate through the array to alter its contents. 
+# Since the method has to be destructuve, I added the "!" at the end of "collect".
+# I used #is_a? to check if each element in the array is an integer.
+# This method returns true if the element is an integer, in which case "thing_to_modify" will be added to it.
+# I used #each to iterate through the hash to modify the values. The
+# values can be changed by accessing the key through "source[key] =".
 #
 
 
