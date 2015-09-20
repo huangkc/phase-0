@@ -7,13 +7,17 @@ my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, 
 
 # Person 1's solution
 def my_array_finding_method(source, thing_to_find)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  
+  source.grep(/#{thing_to_find}/)
 end
+
+# p my_array_finding_method(i_want_pets, "t")
+
 
 def my_hash_finding_method(source, thing_to_find)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+new_array = source.select {|k, v| v == thing_to_find}.keys
 end
-
+# p my_hash_finding_method(my_family_pets_ages, 3)
 # Identify and describe the Ruby method(s) you implemented.
 #
 #
@@ -27,6 +31,8 @@ def my_array_modification_method!(source, thing_to_modify)
     else x
     end
   end
+
+
 end
 def my_hash_modification_method!(source, thing_to_modify)
   source.each{|key,value| source[key] = value+thing_to_modify}
@@ -50,7 +56,7 @@ end
 def my_hash_sorting_method(source)
    source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
 end
-
+# p my_array_deletion_method!(["cat", "dog", "iguana", "shoe"], "o")
 # Identify and describe the Ruby method(s) you implemented.
 #
 #
@@ -59,11 +65,11 @@ end
 
 # Person 4
 def my_array_deletion_method!(source, thing_to_delete)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.delete_if {|item| item.to_s.include?(thing_to_delete)}
 end
 
 def my_hash_deletion_method!(source, thing_to_delete)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.delete_if {|name, age| name.include?(thing_to_delete)}
 end
 
 # Identify and describe the Ruby method(s) you implemented.
