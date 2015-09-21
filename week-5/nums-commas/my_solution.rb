@@ -56,30 +56,27 @@ def nums_commas(number)
   new_number = ""
 
   if number.to_s.length < 4
-    number
+    
+    return number
   else
   	length = number.to_s.length
   	c = 0
   	d = 0
   	new_number << number.to_s[c]
   	while c < length
-		c+=1
-
-  		if c % 2 == 0 
-  		
+		if c/2==0 && c<length-3
   			new_number <<','
 		else
 			d+=1
 			new_number << number.to_s[d]
-			
 		end
-		
+		c+=1
 	end
 	new_number
  end
-	  	
+	
 end
-
+nums_commas(9999)
 
 # 2. Refactored Solution
 
