@@ -45,15 +45,18 @@ def nums_commas(number)
  end
 end
 
+# I tried to just solve the problemfor four-digit numbers but am not 
+# sure how to generalize this solution.
 
-# 2. Refactored Solution
+
+# # 2. Refactored Solution
 
 
 # 3. Reflection
 
 # What was your process for breaking the problem down? What different approaches did you consider?
 # I started by solving the problem by hand to see what the steps would be. Then I tried to translate each step into pseudocode.
-# I considered comparing the old with the new number and transforming the number itself.
+# I considered comparing the old with the new number and transforming the number itself. Also trid to reverse the number string before iterating.
 
 # Was your pseudocode effective in helping you build a successful initial solution? It helped me break down the problem and create the basic structure for the 
 # code. As I followed the pseudocode, I could see where the holes were inthe logic the code that needed to be filled in. If I had time to do more research I would
