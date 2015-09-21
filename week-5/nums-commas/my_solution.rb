@@ -29,25 +29,23 @@ def nums_commas(number)
   num_reverse = ""
 
   if number.to_s.length < 4
-   return number
+    number
   else
   	num_reverse = number.to_s.reverse
   	c = 0 
 
   	while c < number.to_s.length 
   		
-  		if c %3==1 && c!=1
-
-		  	new_number = new_number <<','
+  		if c/3==1
+  		 	new_number = new_number <<','
 	  	else 
 	  		new_number = new_number << num_reverse[c]
 	  	end
 	  	c+=1
-	 end
-	 
+	end
+	new_number.reverse
  end
- 
- new_number.reverse	  	
+	  	
 end
 
 
