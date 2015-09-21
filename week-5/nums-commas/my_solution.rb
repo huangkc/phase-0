@@ -26,29 +26,32 @@
 def nums_commas(number)
 
   new_number = ""
+  num_reverse = ""
 
   if number.to_s.length < 4
-   new_number = number.to_s
+   return number
+  else
+  	num_reverse = number.to_s.reverse
+  	c = 0 
 
-   else
-	length = number.to_s.length 
-	
-    #if the length of the number is even
-		#calculate where the commass need to go		
-		#iterate through number.to_s
-		#check if the position should be a digit or a comma. 
-		#Insert comma into new_number if the position needs to be a comma, else insert the digit
+  	while c < number.to_s.length 
+  		
+  		if c %3==1 && c!=1
 
-	#else  #if the length of the number is odd 
-		#iterate through number.to_s
-		#check if the position should be a digit or a comma. 
-		#Insert comma into new_number if the position needs to be a comma, else insert the digit
-
-# 	end
- 	
- 	end
-	new_number
+		  	new_number = new_number <<','
+	  	else 
+	  		new_number = new_number << num_reverse[c]
+	  	end
+	  	c+=1
+	 end
+	 
+ end
+ 
+ new_number.reverse	  	
 end
+
+
+  
 
 # 2. Refactored Solution
 
