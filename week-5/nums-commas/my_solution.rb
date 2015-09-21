@@ -24,15 +24,15 @@
 # 1. Initial Solution
 
 def nums_commas(number)
-  
-  if length < 4
+
+  new_number = ""
+
+  if number.to_s.length < 4
    new_number = number.to_s
 
    else
 	length = number.to_s.length 
-	new_number = ""
-
-
+	
     #if the length of the number is even
 		#calculate where the commass need to go		
 		#iterate through number.to_s
@@ -45,8 +45,9 @@ def nums_commas(number)
 		#Insert comma into new_number if the position needs to be a comma, else insert the digit
 
 # 	end
- 	new_number
- end
+ 	
+ 	end
+	new_number
 end
 
 # 2. Refactored Solution
