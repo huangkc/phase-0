@@ -23,40 +23,9 @@
 
 # 1. Initial Solution
 
-# def nums_commas(number)
-
-#   new_number = ""
-#   num_reverse = ""
-
-#   if number.to_s.length < 4
-#     number
-#   else
-#   	num_reverse = number.to_s.reverse
-#   	c = 0 
-#   	d=0
-#   	while c < number.to_s.length 
-  		
-#   		if c/3==1
-#   		 	new_number = new_number <<','
-# 	  	else 
-# 	  		new_number = new_number << num_reverse[c]
-# 	  	end
-# 	  	c+=1
-# 	end
-# 	p new_number.reverse
-#  end
-	  	
-# end
-# nums_commas(1000)
-
-  
-
 def nums_commas(number)
-
   new_number = ""
-
   if number.to_s.length < 4
-    
     return number
   else
   	length = number.to_s.length
@@ -74,9 +43,8 @@ def nums_commas(number)
 	end
 	new_number
  end
-	
 end
-nums_commas(9999)
+
 
 # 2. Refactored Solution
 
