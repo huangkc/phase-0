@@ -50,11 +50,11 @@ end
 
 # Person 3
 def my_array_sorting_method(source)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+ source.sort_by { |x| x.to_s }
 end
 
 def my_hash_sorting_method(source)
-   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+   source.sort_by {|_key, value| value}
 end
 # p my_array_deletion_method!(["cat", "dog", "iguana", "shoe"], "o")
 # Identify and describe the Ruby method(s) you implemented.
