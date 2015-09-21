@@ -24,26 +24,29 @@
 # 1. Initial Solution
 
 def nums_commas(number)
-length = number.to_s.length 
-new_number=""
+  
+  if length < 4
+   new_number = number.to_s
 
-if length <4
-	return number
-else
-	if number % 2 == 0  #if number is even
+   else
+	length = number.to_s.length 
+	new_number = ""
+
+
+    #if the length of the number is even
 		#calculate where the commass need to go		
 		#iterate through number.to_s
 		#check if the position should be a digit or a comma. 
 		#Insert comma into new_number if the position needs to be a comma, else insert the digit
 
-	else  #if number is odd 
+	#else  #if the length of the number is odd 
 		#iterate through number.to_s
 		#check if the position should be a digit or a comma. 
 		#Insert comma into new_number if the position needs to be a comma, else insert the digit
 
-	end
-	return new_number
-end
+# 	end
+ 	new_number
+ end
 end
 
 # 2. Refactored Solution
