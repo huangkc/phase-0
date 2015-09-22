@@ -54,3 +54,5 @@ end
 # # Should you always use an accessor to cover your bases? Why or Why not? No. That might make debugging more difficult. Also,
 # values could be altered accidentally if everything is write-able all the time.
 # What is confusing to you about these methods?
+# I'm not clear about the difference between class methods and instance
+#methods.
