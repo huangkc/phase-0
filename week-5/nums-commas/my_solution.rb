@@ -1,3 +1,8 @@
+
+
+
+
+
 # Numbers to Commas Solo Challenge
 
 # I spent [] hours on this challenge.
@@ -24,29 +29,28 @@
 # 1. Initial Solution
 
 def nums_commas(number)
-  new_number = ""
-  if number.to_s.length < 4
-    return number
-  else
-  	length = number.to_s.length
-  	c = 0
-  	d = 0
-  	new_number << number.to_s[c]
-  	while c < length
-		if c/2==0 && c<length-3
-  			new_number <<','
-		else
-			d+=1
-			new_number << number.to_s[d]
-		end
-		c+=1
-	end
-	new_number
- end
+
+    if number.to_s.length < 4 
+        p number.to_s 
+    else
+      new_number = []
+      num_array = []
+      num_array = number.to_s.split(//).reverse
+      p num_array
+      i=0
+      while i <= number.to_s.length-3
+         new_number = new_number << num_array[i..i+2]
+         i+=3
+      end 
+       if number.to_s.length % 6 !=0
+         new_number << num_array[i..number.to_s.length-1]        
+       end
+  
+      p new_number
+  end
 end
 
-# I tried to just solve the problemfor four-digit numbers but am not 
-# sure how to generalize this solution.
+nums_commas(10000)
 
 
 # # 2. Refactored Solution
