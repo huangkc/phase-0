@@ -1,8 +1,3 @@
-
-
-
-
-
 # Numbers to Commas Solo Challenge
 
 # I spent [] hours on this challenge.
@@ -30,27 +25,29 @@
 
 def nums_commas(number)
 
-    if number.to_s.length < 4 
+ if number.to_s.length < 4 
         p number.to_s 
-    else
-      new_number = []
-      num_array = []
-      num_array = number.to_s.split(//).reverse
-      p num_array
-      i=0
-      while i <= number.to_s.length-3
-         new_number = new_number << num_array[i..i+2]
-         i+=3
-      end 
-       if number.to_s.length % 6 !=0
-         new_number << num_array[i..number.to_s.length-1]        
-       end
-  
-      p new_number
+ else
+   new_number = []
+   num_array = []
+   num_array = number.to_s.split(//).reverse
+      
+   i=0
+   while i <= number.to_s.length-3
+    new_number = new_number << num_array[i..i+2]
+    i+=3
+   end 
+   if number.to_s.length % 6 !=0
+      new_number << num_array[i..number.to_s.length-1]        
+   end
+       p new_number
+       x = []
+       new_number.collect!{ |item| item.join.reverse}
+       p new_number.reverse.join(",")
   end
 end
 
-nums_commas(10000)
+#nums_commas(12345678)
 
 
 # # 2. Refactored Solution
