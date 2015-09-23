@@ -7,36 +7,36 @@
 # Pseudocode
 
 # Input: a list of strings
-# Output: one of the strings at random
-# Steps:
+# Output: one of the strings from the list selected at random
+# Steps:   
 
 
 # Initial Solution
 
-# class Die
+class Die
     
-#   def initialize(labels)
+  def initialize(labels)
 
-#   	@labels=labels
-#   	if labels.length == 0
-# 	   raise ArgumentError.new("Input is empty")
-# 	end
-#   end
+  	@labels=labels
+  	if labels.length == 0
+	   raise ArgumentError.new("Input is empty")
+	end
+  end
 
-#   def labels
-#   	@labels
-#   end
+  def labels
+  	@labels
+  end
 
-#   def sides
-#   	@sides
-#   end
+  def sides
+  	@sides
+  end
 
-#   def roll
-# 	# generate random combo of the elements of the array
-#     x = rand(labels.length)
-#     labels[x]
-#   end
-# end
+  def roll
+	# generate random combo of the elements of the array
+    x = rand(labels.length)
+    labels[x]
+  end
+end
 
 die=Die.new(["A","B","C","D","E"])
 die.roll
@@ -61,11 +61,19 @@ class Die
   end
 end
 
-
-
-
 # Reflection
-# What were the main differences between this die class and the last one you created in terms of implementation? Did you need to change much logic to get this to work?
+# What were the main differences between this die class and the last one you created in terms of implementation? 
+# This die class has to randomize the input and return it.
+
+# Did you need to change much logic to get this to work? 
+# I did not have to change the logic very much.
+
 # What does this exercise teach you about making code that is easily changeable or modifiable? 
-# What new methods did you learn when working on this challenge, if any?
-# What concepts about classes were you able to solidify in this challenge?
+# Repetition and duplication in the code may help make the code easier to modify.
+
+# What new methods did you learn when working on this challenge, if any? 
+# I learned about attr_reader and attr_writer methods.
+
+# What concepts about classes were you able to solidify in this challenge? 
+# How to define and initialize a class, how to define instance methods, 
+# and how to declare instance variables.
