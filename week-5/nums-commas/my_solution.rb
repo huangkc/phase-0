@@ -12,21 +12,49 @@
 # What is the output? (i.e. What should the code return?)The integer separated by commas
 # What are the steps needed to solve the problem?
 # Convert the integer to a string and check if the length is at least 4. 
-# If the length is shorter than 4, return the integer.
-# if the length is longer than 4 and even: calculate where the commas need to go
-# if the length is longer than 4 and odd: calculate where the commas need to go
-# Make a new empty string and insert the digits from the integer one-by-one and insert the commas
-# where they are supposed to go.
-# Since the number of digits in the new number will be different from the number 
-# of digits in the old number, we will need two different counters to iterate
-# through the numbers.
+# If length is shorter than 4, return the integer 
+# If length is longer than 4, store the number in an array and reverse the array and divide 
+# the elements into groups of three.
+# Insert the elements into a new empty array.
+# Iterate through the new array and join the items in each element of the new array.
+# Reverse the new array
+# Add commas between each element in the new array
 
 # 1. Initial Solution
+
+# def nums_commas(number)
+
+#  if number.to_s.length < 4 
+#         number.to_s 
+#  else
+#    new_number = []
+#    num_array = []
+#    num_array = number.to_s.split(//).reverse
+      
+#    i=0
+#    while i <= number.to_s.length-3
+#     new_number = new_number << num_array[i..i+2]
+#     i+=3
+#    end 
+#    if number.to_s.length % 6 !=0
+#       new_number << num_array[i..number.to_s.length-1]        
+#    end
+#        new_number.collect!{ |item| item.join.reverse}
+#        new_number = new_number.reverse.join(",")
+#        new_number
+#   end
+# end
+
+#nums_commas(12345678)
+
+
+# # 2. Refactored Solution
 
 def nums_commas(number)
 
  if number.to_s.length < 4 
-        p number.to_s 
+        number.to_s 
+        
  else
    new_number = []
    num_array = []
@@ -40,17 +68,13 @@ def nums_commas(number)
    if number.to_s.length % 6 !=0
       new_number << num_array[i..number.to_s.length-1]        
    end
-       p new_number
-       x = []
        new_number.collect!{ |item| item.join.reverse}
-       p new_number.reverse.join(",")
+       new_number = new_number.reverse.join(",")
+       new_number
   end
+   
 end
 
-#nums_commas(12345678)
-
-
-# # 2. Refactored Solution
 
 
 # 3. Reflection
