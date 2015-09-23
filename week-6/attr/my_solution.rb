@@ -51,8 +51,7 @@ end
 # What is a reader method? a method that allows a variable to be read.
 # What is a writer method? a method that allows a variable to be written.
 # What do the attr methods do for you? the can make the code simpler by cutting down on the number of methods.
-# # Should you always use an accessor to cover your bases? Why or Why not? No. That might make debugging more difficult. Also,
+# Should you always use an accessor to cover your bases? Why or Why not? No. That might make debugging more difficult. Also,
 # values could be altered accidentally if everything is write-able all the time.
-# What is confusing to you about these methods?
-# I'm not clear about the difference between class methods and instance
-#methods.
+# What is confusing to you about these methods? 
+#The way to pass information to/from instance methods is confusing.
