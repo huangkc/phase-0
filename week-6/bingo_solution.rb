@@ -103,8 +103,8 @@ class BingoBoard
     @letter = ["B","I","N","G","O"][random_number]
     @number = rand(100)+1
   end
- 
-  def check      
+
+  def get_column(column) 
       case 
         when @letter=="B" 
           column=0
@@ -117,23 +117,29 @@ class BingoBoard
         else 
           column=4
       end
+  end
+
+  def check      
+      c=0
+      get_column(c)
+      column = c
       p "Call: #{@letter}:#{@number}"
       match=false
       row=0
       while row < 5
-      if @bingo_board[row][column] == @number
-         @bingo_board[row][column]="x"
-         match = true
-         p "Match!"
-         r = 0
-         c = column
-         print_column(r,c)
-      end 
-      row+=1
-    end
-    if match == false
-      p "No match!"
-    end
+       if @bingo_board[row][column] == @number
+          @bingo_board[row][column]="x"
+          match = true
+          p "Match!"
+          r = 0
+          c = column
+          print_column(r,c)
+       end 
+       row+=1
+      end
+      if match == false
+        p "No match!"
+      end
   end
 
   def print_column(r,c)
@@ -184,11 +190,11 @@ new_game.display
 # I might need to use a variable across methods then I used an instance variable.
 
 # What do you feel is most improved in your refactored solution?
-# In initial solution all variables are instance variables. In the refactored solution, only @letter, @number,
-# and @bingo_board are instance variables. The refactored solution has a case statement to determine the column
-# number. I added a method for printing the new column 
-# that can be called in the check method if a match is found.
-# The display method is simplified by using #each.
+# In the initial solution all variables are instance variables. In the refactored solution, only @letter, @number,
+# and @bingo_board are instance variables. In the refactored solution I experimented with adding a
+# get_column method to determine the column number and a method for printing the new column if a match is found. Both are 
+# called in the check method.
+
 
 
 
