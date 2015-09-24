@@ -104,7 +104,7 @@ class BingoBoard
     @number = rand(100)+1
   end
 
-  def get_column(column) 
+  def check      
       case 
         when @letter=="B" 
           column=0
@@ -114,15 +114,10 @@ class BingoBoard
           column=2
         when @letter=="G" 
           column=3
-        else 
+        when @letter=="O"
           column=4
       end
-  end
 
-  def check      
-      c=0
-      get_column(c)
-      column = c
       p "Call: #{@letter}:#{@number}"
       match=false
       row=0
@@ -191,10 +186,8 @@ new_game.display
 
 # What do you feel is most improved in your refactored solution?
 # In the initial solution all variables are instance variables. In the refactored solution, only @letter, @number,
-# and @bingo_board are instance variables. In the refactored solution I experimented with adding a
-# get_column method to determine the column number and a method for printing the new column if a match is found. Both are 
-# called in the check method.
-
+# and @bingo_board are instance variables. A case statement is used to determine the column number.
+# And I experimented with adding a method for printing the new column if a match is found. 
 
 
 
