@@ -8,32 +8,30 @@
 
 # Create a method to generate a letter ( b, i, n, g, o) and a number (1-100)
   #fill in the outline here
-  # define a variable letter
-  # define a variable number
-  # letter will be generatd randomly from ("b", "i", "n", "g", "o")
-  # number will be generated randomly between 1 and 100
+  # Define a variable for the letter
+  # Define a variable the number
+  # Letter will be generatd randomly from ("b", "i", "n", "g", "o")
+  # Number will be generated randomly between 1 and 100
 
 # Check the called column for the number called.
   #fill in the outline here
-  # Convert called letter to column number
+  # Convert the letter to a column number
   # Set one counter as the row number
-  # Determine which column to go to based on the letter called
-  # Compare number with each element in each row of the column
+  # Compare the number with each element in each row of the column
 
 # If the number is in the column, replace with an 'x'
   #fill in the outline here
-  # set the value for the position to "x"
+  #Set the value for the position to "x"
 
 # Display a column to the console
   #fill in the outline here
-  # I assume this means to display the new column if a match is found
-  # record the column number
-  # iterate through the rows and print the column values
+  # If a match is found, record the column number
+  # Iterate through the rows and print the column values
   # 
 
 # Display the board to the console (prettily)
   #fill in the outline here
-  # iterate through the board and print one element at a time
+  #Iterate through the board and print one element at a time
 
 # Initial Solution
 class BingoBoard
@@ -49,7 +47,9 @@ class BingoBoard
   end
 
   def check
-    @column = 0
+    @column = 0 
+    #column to be determined with a sepaate mechanism
+    #this loop iterates through the entire board
     @match = false
     while @column < 5
       @row=0
@@ -185,7 +185,7 @@ new_game.display
 
 # What do you feel is most improved in your refactored solution?
 # In the initial solution all variables are instance variables. In the refactored solution, only @letter, @number,
-# and @bingo_board are instance variables. A case statement is used to determine the column number.
+# and @bingo_board are instance variables. A case statement is put in to determine the column number.
 # And I experimented with adding a method for printing the new column if a match is found. 
 # Considered making the case statement into a new method but could not
 # get it to work.
