@@ -22,73 +22,72 @@
 
 # If the number is in the column, replace with an 'x'
   #fill in the outline here
-  # need a way to get the position if there is a match
-  # if no match, print a message "No match"
-  # Model the method one column at a time
+  # set the value for the position to "x"
 
 # Display a column to the console
   #fill in the outline here
-  # record the colum number
-  #iterate through the rows and print the column values
+  # I assume this means to display the new column if a match is found
+  # record the column number
+  # iterate through the rows and print the column values
   # 
 
 # Display the board to the console (prettily)
   #fill in the outline here
-  # iterate through the board and print row by row
+  # iterate through the board and print one element at a time
 
 # Initial Solution
-# class BingoBoard
+class BingoBoard
 
-#   def initialize(board)
-#     @bingo_board = board
-#   end
+  def initialize(board)
+    @bingo_board = board
+  end
 
-#   def call
-#     x = rand(4)+1
-#     @letter = ["b","i","n","g","o"][x]
-#     @number = rand(100)+1
-#   end
+  def call
+    x = rand(4)+1
+    @letter = ["b","i","n","g","o"][x]
+    @number = rand(100)+1
+  end
 
-#   def check
-#     @column = 0
-#     @match = false
-#     while @column < 5
-#       @row=0
-#       while @row < 5
-#         if @bingo_board[@row][@column] == @number
-#            @bingo_board[@row][@column]="x"
-#            @match = true
-#            p "Match!"
-#             # print column
-#             row = 0
-#             column = @column
-#             while row < 5
-#              p @bingo_board[row][column]
-#              row+=1
-#             end
-#         end 
-#         @row+=1
-#       end
-#       @column+=1
-#     end
+  def check
+    @column = 0
+    @match = false
+    while @column < 5
+      @row=0
+      while @row < 5
+        if @bingo_board[@row][@column] == @number
+           @bingo_board[@row][@column]="x"
+           @match = true
+           p "Match!"
+            # print column
+            row = 0
+            column = @column
+            while row < 5
+             p @bingo_board[row][column]
+             row+=1
+            end
+        end 
+        @row+=1
+      end
+      @column+=1
+    end
 
-#     if @match == false
-#       p "No match!"
-#     end
-#   end
+    if @match == false
+      p "No match!"
+    end
+  end
 
-#   def display
-#     column=0
-#     while column < 5
-#       row=0
-#       while row < 5
-#         p @bingo_board[row][column]
-#         row+=1
-#       end
-#       column+=1
-#     end
-#   end
-# end
+  def display
+    column=0
+    while column < 5
+      row=0
+      while row < 5
+        p @bingo_board[row][column]
+        row+=1
+      end
+      column+=1
+    end
+  end
+end
 
 #Refactored solution
 
@@ -188,7 +187,8 @@ new_game.display
 # In the initial solution all variables are instance variables. In the refactored solution, only @letter, @number,
 # and @bingo_board are instance variables. A case statement is used to determine the column number.
 # And I experimented with adding a method for printing the new column if a match is found. 
-
+# Considered making the case statement into a new method but could not
+# get it to work.
 
 
 
