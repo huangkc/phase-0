@@ -35,7 +35,7 @@ def my_array_modification_method!(source, thing_to_modify)
 
 end
 def my_hash_modification_method!(source, thing_to_modify)
-  source.each{|key,value| source[key] = value+thing_to_modify}
+  source.each{|key,value| source[key]+=thing_to_modify}
 end
 
 # Identify and describe the Ruby method(s) you implemented.
@@ -80,13 +80,26 @@ end
 
 # Person 5
 def my_array_splitting_method(source)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  new_array=[[], []]
+  
+  source.each do |x|
+    if x.is_a?(Integer)
+      new_array[0]<<x
+    else 
+      new_array[1]<<x
+    end
+   end
+new_array
+
 end
 
 def my_hash_splitting_method(source, age)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
+  new_array=[[], []]
 
+new_array[0]=source.select {|k, v| v <= age}.to_a
+new_array[1]=source.select {|k, v| v > age}.to_a
+new_array
+end
 # Identify and describe the Ruby method(s) you implemented.
 #
 #
