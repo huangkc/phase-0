@@ -62,18 +62,23 @@ class Die
 end
 
 # Reflection
-# What were the main differences between this die class and the last one you created in terms of implementation? 
+# What were the main differences between this die class and 
+#the last one you created in terms of implementation? 
 # This die class has to randomize the input and return it.
 
 # Did you need to change much logic to get this to work? 
 # I did not have to change the logic very much.
 
-# What does this exercise teach you about making code that is easily changeable or modifiable? 
-# Repetition and duplication in the code may help make the code easier to modify.
+# What does this exercise teach you about making code that 
+#is easily changeable or modifiable? 
+# Repetition and duplication in the code may help make 
+#the code easier to modify.
 
-# What new methods did you learn when working on this challenge, if any? 
+# What new methods did you learn when working on this 
+#challenge, if any? 
 # I learned about attr_reader and attr_writer methods.
 
-# What concepts about classes were you able to solidify in this challenge? 
-# How to define and initialize a class, how to define instance methods, 
-# and how to declare instance variables.
+# What concepts about classes were you able to solidify 
+#in this challenge? 
+# How to define and initialize a class, how to define 
+#instance methods, and how to declare instance variables.
