@@ -19,11 +19,12 @@ class Greetings
 	end
 
 	def hello
-		puts "Hello Student! How wonderful to see you today."
+		puts "Hello #{@nameData.name}! How wonderful to see you today."
 	end
 end
 
-
+greet=Greetings.new
+greet.hello
 
 # Reflection
 # Release 1
