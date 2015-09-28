@@ -76,11 +76,23 @@ end
 
 # 4. Reflection
 
-# Which data structure did you and your pair decide to implement and why? We used a hash so we could keep track of the items in the array and their frequency
-# Were you more successful breaking this problem down into implementable pseudocode than the last with a pair? I was more successful breaking this problem down than before.
-# What issues/successes did you run into when translating your pseudocode to code? We had some difficulty making sure the hash values were properly filled in.
-# What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
-# We used #each to iterate through the array. Adding key/value pairs was not difficult but had to add the highest frequency variable in the loop. Used #keep_if to determine which values to keep. And we used #keys to return the array of the keys.
+# Which data structure did you and your pair decide 
+#to implement and why? We used a hash so we could keep 
+#track of the items in the array and their frequency
+# Were you more successful breaking this problem down 
+#into implementable pseudocode than the last with a pair? 
+#I was more successful breaking this problem down than before.
+# What issues/successes did you run into when translating 
+#your pseudocode to code? We had some difficulty making sure
+# the hash values were properly filled in.
+# What methods did you use to iterate through the content? 
+#Did you find any good ones when you were refactoring? Were they 
+#difficult to implement?
+# We used #each to iterate through the array.
+# Adding key/value pairs was not difficult but had to 
+#add the highest frequency variable in the loop. 
+#Used #keep_if to determine which values to keep. 
+#And we used #keys to return the array of the keys.
 
 
 
