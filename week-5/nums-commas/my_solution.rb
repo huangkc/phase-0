@@ -50,30 +50,51 @@
 
 # # 2. Refactored Solution
 
+# def nums_commas(number)
+
+#  if number.to_s.length < 4 
+#         number.to_s 
+        
+#  else
+#    new_number = []
+#    num_array = []
+#    num_array = number.to_s.split(//).reverse
+      
+#    i=0
+#    while i <= number.to_s.length-3
+#     new_number = new_number << num_array[i..i+2]
+#     i+=3
+#    end 
+#    if number.to_s.length % 3 !=0
+#       new_number << num_array[i..number.to_s.length-1]        
+#    end
+#        new_number.collect!{ |item| item.join.reverse}
+#        new_number = new_number.reverse.join(",")
+#        new_number
+#   end
+# end
+
+
 def nums_commas(number)
 
  if number.to_s.length < 4 
-        number.to_s 
+    return number.to_s 
         
  else
-   new_number = []
-   num_array = []
-   num_array = number.to_s.split(//).reverse
+    new_number = number.to_s.split(//).reverse
       
    i=0
-   while i <= number.to_s.length-3
-    new_number = new_number << num_array[i..i+2]
-    i+=3
+   while i < number.to_s.length-3
+    new_number.insert(i+3, ",")
+    i+=4
    end 
-   if number.to_s.length % 3 !=0
-      new_number << num_array[i..number.to_s.length-1]        
-   end
-       new_number.collect!{ |item| item.join.reverse}
-       new_number = new_number.reverse.join(",")
-       new_number
+   
+   new_number = new_number.join.reverse
+   p new_number
+
   end
 end
-
+ # nums_commas(10000)
 # 3. Reflection
 
 # What was your process for breaking the problem down? What different approaches did you consider?
