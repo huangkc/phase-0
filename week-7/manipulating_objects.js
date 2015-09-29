@@ -20,7 +20,7 @@ var adam = {
 };
 terah.spouse=adam;
 terah.weight=125;
-terah.eyeColor=undefined;
+delete terah.eyeColor;
 adam.spouse=terah;
 terah.children={};
 terah.children.carson={};
@@ -39,16 +39,16 @@ console.log(terah);
 //
 //What tests did you have trouble passing? What did you do to 
 //make it pass? Why did that work?
-I hade trouble deleting a property. I had to set the value equal to 
-"undefined" to pass.
+// I had trouble adding names to the children property. 
+// I used .name so test could pass.
 
 // How difficult was it to add and delete properties outside 
-//of the object itself? It was not difficut to add or delete property
-outside the object.
+//of the object itself? 
+// It was not difficut to add or delete property
+// outside the object.
 // What did you learn about manipulating objects in this 
-//challenge? 
-//
-//
+//challenge? I learned how to access the objects properties
+// from outside the object.
 //
 
 

@@ -19,9 +19,17 @@ console.log(x*x)
 // var anwer=prompt("What is your favorite food?");
 // console.log("Hey! That is my favorite too!");
 
-// Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
-
-
+// Complete one of the exercises: Looping a Triangle, 
+//FizzBuzz, or Chess Board
+for (var i = 1; i <=100; i++) {
+  if (i%5==0 && i%3==0)
+    console.log("FizzBuzz");
+    else if (i%5==0 && i%3!=0)
+    	console.log("Buzz");
+  	else if (i%3==0)
+		console.log("Fizz");
+    else console.log(i);
+}
 
 // Functions
 
@@ -30,25 +38,23 @@ function min(num1, num2){
   return Math.min(num1,num2);
 };
 
-
-
-
 // Data Structures: Objects and Arrays
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
+var me = {
+  name: "Terry",
+  age: 30,
+  favorite_food: ["orange", "spinach", "apple"],
+  quirk: "I love writing code",
+}
 
-
-
-
-
-
-
-
-
-
-// chaper 3
-// minimum function
 
 // Reflection
-// What are the biggest similarities and differences between JavaScript and Ruby?
-// Was some of your Ruby knowledge solidified by learning another language? If so, which concepts?
-// How do you feel about diving into JavaScript after reading these chapters?
+// What are the biggest similarities and differences between 
+//JavaScript and Ruby?
+
+
+// Was some of your Ruby knowledge solidified by learning 
+//another language? If so, which concepts?
+
+// How do you feel about diving into JavaScript after 
+//reading these chapters?
