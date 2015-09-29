@@ -37,9 +37,16 @@ console.log(terah);
 // Reflection: Use the reflection guidelines
 //
 //
-//What tests did you have trouble passing? What did you do to make it pass? Why did that work?
-// How difficult was it to add and delete properties outside of the object itself?
-// What did you learn about manipulating objects in this challenge?
+//What tests did you have trouble passing? What did you do to 
+//make it pass? Why did that work?
+I hade trouble deleting a property. I had to set the value equal to 
+"undefined" to pass.
+
+// How difficult was it to add and delete properties outside 
+//of the object itself? It was not difficut to add or delete property
+outside the object.
+// What did you learn about manipulating objects in this 
+//challenge? 
 //
 //
 //
