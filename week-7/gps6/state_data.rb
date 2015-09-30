@@ -53,4 +53,4 @@ STATE_DATA = {
   "Washington,D.C."=> {population_density: 10357, population: 632323},
   "West Virginia" => {population_density: 77.06, population: 1855413},
   "Wisconsin" => {population_density: 105.2, population: 5726398},
-  "Wyoming" => {population_density: 5.851, population: 576412}
+  "Wyoming" => {population_density: 5.851, population: 576412}}
