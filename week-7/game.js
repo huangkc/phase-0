@@ -68,7 +68,7 @@ while(end==false){
           end = true;};
   };
   console.log("Score: Red: "+redTeam.total+"   Blue: "+blueTeam.total);
-  console.log("");
+ 
 }
 
 //Refactored solution
@@ -120,8 +120,8 @@ while(gameEnd==false){
           blueTeam.win(); 
           gameEnd = true;};
   };
-  console.log("Score: Red: "+redTeam.total+"   Blue: "+blueTeam.total);
-  console.log("");
+  console.log("Score: Red: "+redTeam.total+"   Blue: "+blueTeam.total+"\n");
+ 
 }
 
 // Reflection
