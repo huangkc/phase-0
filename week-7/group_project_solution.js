@@ -30,6 +30,8 @@ function sum(oddArray,evenArray){
 };
   console.log(sum1);
   console.log(sum2);
+  return sum1;
+  return sum2;
 };
 
 function mean(oddArray,evenArray){
@@ -47,6 +49,8 @@ function mean(oddArray,evenArray){
   console.log(mean1);
   mean2=sum2/evenArray.length;  
   console.log(mean2);  
+  return mean1;
+  return mean2;
 };
 
 function median(oddArray,evenArray){
@@ -65,5 +69,7 @@ function median(oddArray,evenArray){
   y=x-1;
   medn2=(evenArray[x]+evenArray[y])/2
   console.log(medn2);
+  return medn1;
+  return medn2;
 };
 
