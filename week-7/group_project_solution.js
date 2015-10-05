@@ -73,3 +73,40 @@ function median(oddArray,evenArray){
   return medn2;
 };
 
+//Refactored solution
+function sum(array){
+  var sum=0;
+  for(var i=0; i<array.length; i++){
+  var sum=sum+array[i]; 
+};
+return sum;
+}
+
+function mean(array){
+   var sum=0;
+   for(var i=0; i<array.length; i++){
+   var sum=sum+array[i]; 
+   };
+   return sum/array.length;
+ };
+
+function median(array){
+  var position;
+  var x;
+  var y;
+  array.sort;
+  if (array.length%2!=0)  {
+    position=(array.length-1)/2;
+    console.log(array[position]);
+    return array[position];
+    
+   }
+    else {
+     x=array.length/2;
+     y=x-1;
+      console.log((array[x]+array[y])/2);
+      return (array[x]+array[y])/2;
+   };
+};    
+
+
