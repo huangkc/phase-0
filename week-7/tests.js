@@ -1,5 +1,56 @@
 // Add the finished solution here when you receive it.
+
+function sum(oddArray,evenArray){
+  var sum1=0;
+  var sum2=0;
+  for(var i=0; i<oddArray.length; i++){
+  var sum1=sum1+oddArray[i]; 
+};
+  for (var j=0; j<evenArray.length; j++){
+  var sum2=sum2+evenArray[j];
+};
+  console.log(sum1);
+  console.log(sum2);
+};
+
+function mean(oddArray,evenArray){
+  var sum1=0;
+  var sum2=0;
+  var mean1=0;
+  var mean2=0;
+  for(var i=0; i<oddArray.length; i++){
+  var sum1=sum1+oddArray[i]; 
+};
+  for (var j=0; j<evenArray.length; j++){
+  var sum2=sum2+evenArray[j];
+};
+  mean1=sum1/oddArray.length;
+  console.log(mean1);
+  mean2=sum2/evenArray.length;  
+  console.log(mean2);  
+};
+
+function median(oddArray,evenArray){
+  var medn1;
+  var medn2;
+  var positionOdd;
+  var x;
+  var y;
+  oddArray.sort;
+  positionOdd=(oddArray.length-1)/2;
+  medn1=oddArray[positionOdd]
+  console.log(medn1);
+  
+  evenArray.sort;  
+  x=evenArray.length/2;
+  y=x-1;
+  medn2=(evenArray[x]+evenArray[y])/2
+  console.log(medn2);
+};
+
+
 // __________________________________________
+
 // Tests:  Do not alter code below this line.
 
 
