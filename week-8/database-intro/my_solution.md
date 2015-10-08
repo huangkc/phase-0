@@ -50,7 +50,7 @@ ON regions.id=states.region_id
 ORDER by region_id ASC;
 Schema
 
-![Schema](./imgs/schema8.4.png)
+![Schema](../imgs/schema8.4.png)
 
 
 Reflection
