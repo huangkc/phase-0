@@ -1,7 +1,7 @@
 /*
 Gradebook from Names and Scores
 I worked on this challenge [by myself, with:]
-This challenge took me [#] hours.
+This challenge took me [2] hours.
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
 variables match (i.e., 'Joseph' is the first element in students; his scores are the first value in scores.).
@@ -15,13 +15,9 @@ var scores = [ [80, 70, 70, 100],
                [75, 70, 80, 75],
                [100, 90, 95, 85] ]
 
-
-
-
-
-
 // __________________________________________
 // Write your code below.
+
 var gradebook={};
 gradebook["Joseph"]={};
 gradebook["Susan"]={};
@@ -51,27 +47,47 @@ gradebook.getAverage=function(name){
    return averageScore;
  };
 
-
 // __________________________________________
 // Refactored Solution
+var gradebook={};
 
+for (var i=0; i<students.length; i++) {
+  gradebook[students[i]]={};
+  gradebook[students[i]].testScores=scores[i];
+};
 
+gradebook.addScore=function(name, score){
+  gradebook[name].testScores.push(score);
+};
 
+gradebook.getAverage=function(){};
 
+function average(grades){
+  var sum=0;
+  for (var i=0; i<grades.length; i++){
+    sum=sum+grades[i];
+  }
+  return sum/grades.length;
+};
 
-
-
+gradebook.getAverage=function(name){
+    var averageScore = average(gradebook[name].testScores);
+    return averageScore;
+};
 
 // __________________________________________
 // Reflect
+// What did you learn about adding functions to objects?
+// Functions can be added to anobject the same way as 
+// adding properties.
 
+// How did you iterate over nested arrays in JavaScript? We used
+//the for loop toiterate over nested array.
 
-
-
-
-
-
-
+// Were there any new methods you were able to 
+// incorporate? If so, what were they and how did they work?
+// We combined releases 2 and 3 into a for loop to reduce the 
+// repetititon.
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
