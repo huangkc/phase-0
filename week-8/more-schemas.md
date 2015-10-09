@@ -1,13 +1,13 @@
 Release 2
 One-to-One Database
-![Schema](../imgs/schema8.5.png)
+![Schema](./imgs/schema8.5.png)
 
 A country can have at most one head of state and a person can be 
 head of state for at most one country.
 
 Release 4
 Grocery list
-![Schema](../imgs/grocery.png)
+![Schema](./imgs/grocery.png)
 
 Release 6
 
