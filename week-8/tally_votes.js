@@ -206,6 +206,43 @@ winner("vicePresident");
 winner("secretary");
 winner("treasurer");
 
+// Solution with recursion
+
+function tally(position){
+  for (var name in votes){
+  if (votes[name][position] in voteCount[position]){
+    voteCount[position][votes[name][position]]+=1
+    } else {
+    voteCount[position][votes[name][position]]=1
+    };
+    };
+  };
+
+var winner = function(object, position) {
+   var largest = 0
+   var winnerName = ""
+   if (object.hasOwnProperty(position)) {
+     winner(object[position], position)
+   } else {
+     for (var index in object) {
+       if (object[index] > largest) {
+         largest = object[index];
+         winnerName = index;
+         officers[position] = winnerName;
+       }
+     }
+   }
+ }
+
+tally("president");
+tally("vicePresident");
+tally("secretary");
+tally("treasurer");
+winner(voteCount,"president");
+winner(voteCount,"vicePresident");
+winner(voteCount,"secretary");
+winner(voteCount,"treasurer");
+
 // __________________________________________
 // Reflection
 
