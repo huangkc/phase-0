@@ -126,6 +126,16 @@ p dr_evils_cipher("alc@qeoi*e$xvmppmsr^alir#ai*gsyph%qeoi...#fmppmsrw?")
 # Reflection
 # Keep your reflection limited to 10-15 minutes!
 
+# What concepts did you review in this challenge?
+# I reviewed hashes, arrays, iterating over data structures, 
+# driver code testing, and refactoring.
 
+# What is still confusing to you about Ruby?
+# Sometimes getting the code to do what I want it to do
+# is still difficult without researching.
+
+# What are you going to study to get more prepared for Phase 1?
+# I would like to review Ruby classes, recursive methods, and
+# JS and jQuery.
 
 
