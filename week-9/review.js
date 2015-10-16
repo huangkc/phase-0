@@ -61,3 +61,18 @@ function get_grade(scores){
   else {grade= 'F'}        
   console.log(grade)
 }
+
+//Reflection
+// What concepts did you solidify in working on this challenge? 
+//I reviewed Javascript syntax, conditional statements, and loops.
+
+// What was the most difficult part of this challenge?
+// Trying to debug syntax errors was difficult.
+
+// Did you solve the problem in a new way this time?
+// I solved the problem this time by making more than one object.
+
+// Was your pseudocode different from the Ruby version? 
+// What was the same and what was different?
+// I used the same pseudocode for both. The pseudocode from Ruby
+// was very general so that it applied this time as well.
