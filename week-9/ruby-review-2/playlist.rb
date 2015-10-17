@@ -8,33 +8,6 @@
 
 
 # Initial Solution
-class Song
-	attr_accessor :x,:y,:h
-	$h={}
-	$r=[]
-	def initialize(x,y)
-		@x=x
-		@y=y
-		$h[y]=x
-		
-	end
-end
-
-class Playlist
-	def initialize(*arg)
-		@arg=arg
-		$r.push(@arg)
-	end
-	def add(*arg)
-		@arg=arg
-		$r.push(@arg)
-		p $r
-	end
-	def num_of_tracks
-		return $r.length
-		p $r
-	end
-end
 
 
 # Refactored Solution
@@ -56,11 +29,11 @@ angels = Song.new("Angels", "Within Temptation")
 my_playlist.add(lying_from_you, angels)
 p my_playlist.num_of_tracks == 5
 
-# going_under.play #How would you model a song getting "played" in Ruby? I used `puts` and `sleep`. You can model this however you want.
-# my_playlist.remove(angels)
-# p my_playlist.includes?(lying_from_you) == true
-# my_playlist.play_all
-# my_playlist.display
+going_under.play #How would you model a song getting "played" in Ruby? I used `puts` and `sleep`. You can model this however you want.
+my_playlist.remove(angels)
+p my_playlist.includes?(lying_from_you) == true
+my_playlist.play_all
+my_playlist.display
 
 
 # Reflection
